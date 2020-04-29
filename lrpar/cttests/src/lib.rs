@@ -124,7 +124,7 @@ fn test_lexer_lifetime() {
         let lexer_def = crate::lexer_lifetime_l::lexerdef();
         let l = lexer_def.lexer(input);
         match crate::lexer_lifetime_y::parse(&l) {
-            (Option::Some(x),_) => Some(x),
+            (Option::Some(x), _) => Some(x),
             _ => None
         }
     }
